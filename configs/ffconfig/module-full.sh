@@ -2,10 +2,9 @@
 
 #--------------------
 # Standard options:
-export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --disable-everything"
-
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --disable-all"
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-pic"
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-small"
-
 # Component options:
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-avcodec"
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-avformat"
