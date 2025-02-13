@@ -14,25 +14,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# 
+#
 # brew install nasm
 # If you really want to compile without asm, configure with --disable-asm.
 
 export LIB_NAME='ffmpeg'
-export LIPO_LIBS="libavcodec libavformat libavutil libswscale libswresample libavfilter libavdevice"
+export LIPO_LIBS="libavcodec libavformat libavutil"
 export LIB_DEPENDS_BIN="nasm pkg-config"
 
 export GIT_LOCAL_REPO=extra/ffmpeg
 export REPO_DIR=ffmpeg
 
 # you can export GIT_FFMPEG_UPSTREAM=git@xx:yy/FFmpeg.git use your mirror
-if [[ "$GIT_FFMPEG_UPSTREAM" != "" ]] ;then
+if [[ "$GIT_FFMPEG_UPSTREAM" != "" ]]; then
     export GIT_UPSTREAM="$GIT_FFMPEG_UPSTREAM"
 else
     export GIT_UPSTREAM=https://github.com/FFmpeg/FFmpeg.git
 fi
 
-if [[ "$GIT_FFMPEG_COMMIT" != "" ]] ;then
+if [[ "$GIT_FFMPEG_COMMIT" != "" ]]; then
     export GIT_COMMIT="$GIT_FFMPEG_COMMIT"
     export GIT_REPO_VERSION="$GIT_FFMPEG_COMMIT"
 else
@@ -40,4 +40,4 @@ else
     export GIT_REPO_VERSION=6.1.2
 fi
 
-export PRE_COMPILE_TAG=ffmpeg-6.1.2-250213183103
+export PRE_COMPILE_TAG=ffmpeg-6.1.2-250213181957
