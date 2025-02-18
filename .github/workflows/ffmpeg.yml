@@ -25,6 +25,7 @@ jobs:
       - name: Install denpendencies
         run: |
           brew install lame
+          sudo ln -s /opt/homebrew/bin/lame /usr/local/bin/lame
           ./main.sh install -l 'openssl opus' -p ios
       - name: One Step
         run: .github/workflows/onestep.sh ffmpeg ios
