@@ -25,7 +25,7 @@ jobs:
       - name: Install denpendencies
         run: |
           brew install lame
-          echo $(which lame)
+          echo "lame path $(which lame)"
           sudo ln -s /opt/homebrew/bin/lame /usr/local/bin/lame
           ./main.sh install -l 'openssl opus' -p ios
       - name: One Step
