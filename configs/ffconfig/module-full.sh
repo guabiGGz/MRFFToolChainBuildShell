@@ -9,12 +9,10 @@ export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-swresample"
 # 外部库
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-libmp3lame"
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-libopus"
-export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-libfdk_aac"
-export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-libflac"
 
 # 启用编码器
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-encoder=libmp3lame"
-export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-encoder=libflac"
+export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-encoder=flac"
 
 # 启用解码器
 export COMMON_FF_CFG_FLAGS="$COMMON_FF_CFG_FLAGS --enable-decoder=mp3"
